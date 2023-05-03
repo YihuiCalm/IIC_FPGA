@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed May  3 03:45:22 2023
+# Process ID: 25380
+# Current directory: D:/Github/IIC_FPGA/IIC_FPGA.runs/synth_1
+# Command line: vivado.exe -log IIC_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IIC_top.tcl
+# Log file: D:/Github/IIC_FPGA/IIC_FPGA.runs/synth_1/IIC_top.vds
+# Journal file: D:/Github/IIC_FPGA/IIC_FPGA.runs/synth_1\vivado.jou
+# Running On: LAPTOP-U9EM5UJ6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+source IIC_top.tcl -notrace

@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"IIC_top_tb_time_impl.v" \
+"../../../../../IIC_FPGA.srcs/sim_1/new/IIC_write_tb.v" \
+"../../../../../IIC_FPGA.srcs/sim_1/new/IIC_top_tb.v" \
+
+# Do not sort compile order
+nosort

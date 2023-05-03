@@ -1,0 +1,92 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot IIC_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.IIC_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "IIC_top_tb_time_impl.sdf", for root module "IIC_top_tb/inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "IIC_top_tb_time_impl.sdf", for root module "IIC_top_tb/inst".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDRE(XON="FALSE")
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.xsdbm_v3_0_0_ctl_reg
+Compiling module xil_defaultlib.xsdbm_v3_0_0_stat_reg
+Compiling module xil_defaultlib.xsdbm_v3_0_0_stat_reg__parameter...
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.xsdbm_v3_0_0_ctl_reg__parameteri...
+Compiling module xil_defaultlib.xsdbm_v3_0_0_ctl_reg__parameteri...
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.VCC
+Compiling module simprims_ver.FDCE(XON="FALSE")
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.clk_x_pntrs_7
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.rd_fwft
+Compiling module xil_defaultlib.rd_status_flags_as_17
+Compiling module xil_defaultlib.rd_handshaking_flags__parameteri...
+Compiling module xil_defaultlib.rd_bin_cntr_18
+Compiling module xil_defaultlib.rd_logic__parameterized0
+Compiling module xil_defaultlib.wr_status_flags_as_14
+Compiling module xil_defaultlib.wr_handshaking_flags_15
+Compiling module xil_defaultlib.wr_bin_cntr_16
+Compiling module xil_defaultlib.wr_logic__parameterized0
+Compiling module simprims_ver.RAMD32
+Compiling module simprims_ver.RAMS32
+Compiling module xil_defaultlib.RAM32M_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM32M_HD85
+Compiling module xil_defaultlib.RAM32M_HD86
+Compiling module xil_defaultlib.dmem_13
+Compiling module xil_defaultlib.memory__parameterized0
+Compiling module xil_defaultlib.synchronizer_ff_9
+Compiling module xil_defaultlib.synchronizer_ff_10
+Compiling module xil_defaultlib.synchronizer_ff_11
+Compiling module xil_defaultlib.synchronizer_ff_12
+Compiling module simprims_ver.FDPE(XON="FALSE")
+Compiling module xil_defaultlib.reset_blk_ramfifo_8
+Compiling module xil_defaultlib.fifo_generator_ramfifo__paramete...
+Compiling module xil_defaultlib.fifo_generator_top__parameterize...
+Compiling module xil_defaultlib.fifo_generator_v13_1_4_synth__pa...
+Compiling module xil_defaultlib.fifo_generator_v13_1_4__paramete...
+Compiling module xil_defaultlib.xsdbm_v3_0_0_rdfifo
+Compiling module xil_defaultlib.xsdbm_v3_0_0_rdreg
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.synchronizer_ff__parameterized0_...
+Compiling module xil_defaultlib.clk_x_pntrs
+Compiling module xil_defaultlib.rd_status_flags_as
+Compiling module xil_defaultlib.rd_handshaking_flags
+Compiling module xil_defaultlib.rd_bin_cntr
+Compiling module xil_defaultlib.rd_logic
+Compiling module xil_defaultlib.wr_status_flags_as
+Compiling module xil_defaultlib.wr_handshaking_flags
+Compiling module xil_defaultlib.wr_bin_cntr
+Compiling module xil_defaultlib.wr_logic
+Compiling module xil_defaultlib.RAM32M_HD87
+Compiling module xil_defaultlib.RAM32M_HD88
+Compiling module xil_defaultlib.RAM32M_HD89
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.synchronizer_ff
+Compiling module xil_defaultlib.synchronizer_ff_1
+Compiling module xil_defaultlib.synchronizer_ff_2
+Compiling module xil_defaultlib.synchronizer_ff_3
+Compiling module xil_defaultlib.reset_blk_ramfifo
