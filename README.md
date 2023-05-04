@@ -1,5 +1,8 @@
 # IIC_FPGA
 IIC implementation using Verilog on Vivado, based on ARTY-7 35T FPGA and AT24C02 EEPROM.
 
-Chipscope Waveform below shows writting 0x45 to memory address 0x23 of a EEPROM with device address of 0b1010000:
-![Screenshot (10)](https://user-images.githubusercontent.com/96307958/236044199-943f418d-b98a-4de4-b14a-8dd012498bc0.png)
+Chipscope Waveform below shows writting data 0xAC to memory address 0x00 of an EEPROM with device address of 0b1010000:
+![Screenshot (12)](https://user-images.githubusercontent.com/96307958/236342786-536b01b7-ae4b-4570-8de1-343c6671abeb.png)
+
+Chipscope Waveform below shows reading data 0xAC from memory address 0x00 of an EEPROM with device address of 0b1010000:
+![Screenshot (13)](https://user-images.githubusercontent.com/96307958/236342851-05d936fd-f816-44c2-bd01-053d2b4590d8.png)
