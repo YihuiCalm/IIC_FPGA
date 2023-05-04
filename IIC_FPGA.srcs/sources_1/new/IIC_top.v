@@ -26,14 +26,15 @@ module IIC_top(
 	
 	output scl,
 	inout sda,
-	output led0_b
+	output led0_b,
+	output led1_b
     );
     
     wire reset = btn[0];
     
     reg [6:0] dev_addr = 7'b1010000;
-    reg [7:0] byte_addr = 8'h23;
-    reg [7:0] byte_data = 8'h45;
+    reg [7:0] byte_addr = 8'h00;
+    reg [7:0] byte_data_tx = 8'hac;
     
     reg clk = 0;
     reg [11:0] clk_counter;
@@ -43,7 +44,7 @@ module IIC_top(
     		clk <= 0;
     	end
     	else begin
-    		if (clk_counter==11'd100) begin
+    		if (clk_counter==11'd150) begin
     			clk <= ~clk;
     			clk_counter <= 0;
     		end
@@ -54,33 +55,51 @@ module IIC_top(
     	end
     end
     
-    reg tx_enable = 0;
-    reg [127:0] tx_enable_reg=0;
+    wire start;   
+    reg [127:0] start_reg = 0;
     always @(posedge clk, posedge reset) begin
     	if (reset) begin
-    		tx_enable_reg <= 0;
-    		tx_enable <= 0;
+    		start_reg <= 0;
     	end
     	else begin
-    		tx_enable_reg <= {tx_enable_reg[126:0],btn[1]};
-    		if (&tx_enable_reg) tx_enable <= 1; 
-    		else tx_enable <= 0;
+    		start_reg <= {start_reg[126:0],btn[1]};
     	end
     end
+    assign start = &start_reg;
+
+
+     			
+
+    wire tx_done, rx_done;
     
-    wire tx_done, sda_ctrl;
-    
-	IIC_write inst(
+//	Delete comment to use write function.
+//	IIC_write inst_write(
+//		.clk(clk),
+//		.tx_enable(start),
+//		.reset(reset),
+//		.dev_addr(dev_addr),
+//		.byte_addr(byte_addr),
+//		.byte_data(byte_data_tx),
+//		.tx_done(tx_done),
+//		.scl(scl),
+//		.sda(sda),
+//		.sda_ctrl(led0_b)
+//		);
+	
+	wire [7:0] byte_data_rx;
+	
+//	Delete comment to use read function.
+	IIC_read inst_read(
 		.clk(clk),
-		.tx_enable(tx_enable),
+		.rx_enable(start),
 		.reset(reset),
 		.dev_addr(dev_addr),
 		.byte_addr(byte_addr),
-		.byte_data(byte_data),
-		.tx_done(tx_done),
+		.byte_data(byte_data_rx),
+		.rx_done(rx_done),
 		.scl(scl),
 		.sda(sda),
-		.sda_ctrl(led0_b)
+		.sda_ctrl(led1_b)
 		);
     
 endmodule

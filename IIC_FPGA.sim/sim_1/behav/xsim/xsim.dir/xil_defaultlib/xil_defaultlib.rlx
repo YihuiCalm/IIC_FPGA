@@ -2,8 +2,10 @@
 2020.2
 Oct 19 2021
 03:16:22
-D:/Github/IIC_FPGA/IIC_FPGA.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
-D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_top_tb.v,1683066811,verilog,,,,IIC_top_tb,,,,,,,,
-D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_write_tb.v,1683066127,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_top_tb.v,,IIC_write_tb,,,,,,,,
-D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v,1683066855,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_write_tb.v,,IIC_top,,,,,,,,
-D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_write.v,1683066129,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v,,IIC_write,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.sim/sim_1/behav/xsim/glbl.v,1683145907,verilog,,,,glbl,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_read_tb.v,1683152597,verilog,,,,IIC_read_tb,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_top_tb.v,1683178700,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_read_tb.v,,IIC_top_tb,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_write_tb.v,1683150920,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_top_tb.v,,IIC_write_tb,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_read.v,1683154748,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_write_tb.v,,IIC_read,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v,1683178662,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_read.v,,IIC_top,,,,,,,,
+D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_write.v,1683154750,verilog,,D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v,,IIC_write,,,,,,,,

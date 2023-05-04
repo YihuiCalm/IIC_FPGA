@@ -70,11 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param general.maxThreads 32
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35ticsg324-1L
 
@@ -93,6 +89,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_write.v
   D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v
+  D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_read.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

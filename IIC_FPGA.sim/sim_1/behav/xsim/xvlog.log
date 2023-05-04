@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIC_write
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'sda_ctrl' is not allowed [D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_write.v:48]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIC_top
+INFO: [VRFC 10-2458] undeclared symbol byte_data_rx, assumed default net type wire [D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v:94]
+INFO: [VRFC 10-2458] undeclared symbol sdax, assumed default net type wire [D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_top.v:97]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIC_read
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'sda_ctrl' is not allowed [D:/Github/IIC_FPGA/IIC_FPGA.srcs/sources_1/new/IIC_read.v:49]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_write_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIC_write_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIC_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_read_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIC_read_tb
+INFO: [VRFC 10-2458] undeclared symbol rx_done, assumed default net type wire [D:/Github/IIC_FPGA/IIC_FPGA.srcs/sim_1/new/IIC_read_tb.v:56]

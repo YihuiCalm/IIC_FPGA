@@ -48,7 +48,7 @@ module IIC_top_tb(
 		.btn({tx_enable,reset}),
 		.scl(scl),
 		.sda(sda),
-		.led0_b(sda_ctrl)
+		.led1_b(sda_ctrl)
 		);
     
 endmodule

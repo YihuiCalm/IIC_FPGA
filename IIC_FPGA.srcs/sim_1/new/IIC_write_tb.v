@@ -25,7 +25,6 @@ module IIC_write_tb;
 	reg [6:0] dev_addr=7'b0101010;
 	reg [7:0] byte_addr=8'hcc;
 	reg [7:0] byte_data=8'haa;
-	reg ack=1;
 	wire sda, sda_out;
 	wire sda_ctrl;
 	reg sda_in = 0;

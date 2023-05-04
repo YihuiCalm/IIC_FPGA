@@ -62,6 +62,7 @@ module IIC_write(
 	parameter byte_tx = 6'b000100;
 	parameter ack_wait = 6'b001000;
 	parameter stop = 6'b010000;
+	parameter done = 6'b100000;
 	
 	reg [5:0] state = idle, next = idle;
 	
@@ -71,7 +72,8 @@ module IIC_write(
 			start: next = (counter==4'd3)? byte_tx: start;
 			byte_tx: next = (counter==4'd3)&(bit_counter==4'd7)? ack_wait: byte_tx;
 			ack_wait: next = (counter==4'd3)? (ack? ((byte_counter==4'd2)? stop: byte_tx): stop): ack_wait;
-			stop: next = (counter==4'd3)? idle: stop;
+			stop: next = (counter==4'd3)? done: stop;
+			done: next = done;
 		endcase
 	end		
 	
@@ -92,7 +94,7 @@ module IIC_write(
     // SDA input/output control.
     always @( posedge clk, posedge reset) begin
     	if (reset) sda_ctrl <= 1'b1;
-    	else if (next==ack_wait) sda_ctrl <= 1'b0;
+    	else if (state==ack_wait) sda_ctrl <= 1'b0;
     	else sda_ctrl <= 1'b1;
     end
     
@@ -164,7 +166,7 @@ module IIC_write(
     //Tx_done.
     always @( posedge clk, posedge reset) begin
      	if (reset) tx_done <= 0;
-     	else if (next==stop) tx_done <= 1;
+     	else if ((next==stop)&(counter==4'd2)) tx_done <= 1;
      	else tx_done = 0;
      end
     

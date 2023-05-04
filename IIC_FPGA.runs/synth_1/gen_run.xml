@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1683099920" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/IIC_write.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1683237674" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/IIC_write.dcp">
   <File Type="PA-TCL" Name="IIC_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="IIC_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="IIC_top_reports.tcl"/>
@@ -19,6 +19,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/IIC_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IIC_read.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

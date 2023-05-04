@@ -1,0 +1,7 @@
+Running: xsim.dir/IIC_read_tb_behav/xsimk.exe -simmode gui -wdb IIC_read_tb_behav.wdb -simrunnum 0 -socket 6466
+Design successfully loaded
+Design Loading Memory Usage: 7984 KB (Peak: 7984 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8656 KB (Peak: 8656 KB)
+Simulation CPU Usage: 0 ms
